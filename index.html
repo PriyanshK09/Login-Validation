@@ -8,13 +8,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="login-form">
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password"><br><br>
-        <button type="submit">Login</button>
-      </form>       
-    <script src="script.js"></script>
+    <div class="container">
+    <center>
+        <div class="main">
+                <!-- Login Area -->
+                <div class="login">
+                    <h1>Login</h1>
+                    <form>
+                        <input type="text" id="email" placeholder="Enter Email">
+                        <input type="password" id="password" placeholder="Enter Password">
+                        <button type="button" id="btn">Login</button>
+                    </form>
+                </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Designed and Developed by Priyansh Khare</p>
+            <p>© 2022 Priyansh Khare</p>
+        </div>  
+    </center>
+    </div>
+
+    <script>
+        var emailEntered = document.getElementById('email');
+		var passEntered = document.getElementById('password');
+		var button = document.getElementById('btn');
+
+		button.addEventListener("click", function(){
+			var email = emailEntered.value;
+			var pass = passEntered.value;
+
+			var correctEmail = "priyansh.khare@gmail.com";
+			var correctPass = "veryhardpassword";
+
+			if(email === correctEmail && pass === correctPass){
+				window.open("https://portfolio-priyansh.netlify.app/");
+			}
+			else{
+				alert("Wrong Password")		}
+		});
+    </script>
 </body>
 </html>
