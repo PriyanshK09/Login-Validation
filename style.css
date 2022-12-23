@@ -1,0 +1,33 @@
+#login-form {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #login-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  #login-form input[type="text"],
+  #login-form input[type="password"] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 14px;
+  }
+  
+  #login-form button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
